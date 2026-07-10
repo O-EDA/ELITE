@@ -1,0 +1,119 @@
+case: BBA8B
+pitch_um: 10.0
+waveguide_width_um: 0.5
+loss:
+  propagation_loss_per_um: 0.00015
+  crossing_loss: 0.52
+  min_bend_radius_um: 10.0
+  bend_loss_by_angle:
+    30: 0.01
+    45: 0.015
+    60: 0.02
+    90: 0.03
+bbox:
+- 99
+- 279
+- 306
+- 451
+target_length: 286
+matching_groups:
+- name: group1
+  endpoints:
+  - source:
+    - 277
+    - 306
+    target:
+    - 241
+    - 427
+    source_direction: 0
+    target_direction: 3
+  - source:
+    - 252
+    - 306
+    target:
+    - 168
+    - 430
+    source_direction: 0
+    target_direction: 3
+  - source:
+    - 226
+    - 306
+    target:
+    - 168
+    - 433
+    source_direction: 0
+    target_direction: 3
+  - source:
+    - 201
+    - 306
+    target:
+    - 168
+    - 436
+    source_direction: 0
+    target_direction: 3
+  - source:
+    - 176
+    - 306
+    target:
+    - 168
+    - 440
+    source_direction: 0
+    target_direction: 3
+  - source:
+    - 150
+    - 306
+    target:
+    - 168
+    - 443
+    source_direction: 0
+    target_direction: 3
+  - source:
+    - 125
+    - 306
+    target:
+    - 168
+    - 446
+    source_direction: 0
+    target_direction: 3
+  - source:
+    - 100
+    - 306
+    target:
+    - 241
+    - 449
+    source_direction: 0
+    target_direction: 3
+general_groups: []
+obstacles:
+- - 169
+  - 277
+  - 430
+  - 446
+- - 242
+  - 277
+  - 427
+  - 449
+lut:
+  max_level: 10
+astar:
+  order_policy: input
+  rudy_weight: 0.0
+detour:
+  area_slack_delta: 0.03
+  direction_priority: fixed_original
+  placement: nearest_endpoint
+general:
+  order_policy: input
+  diagonal: true
+  beta: 1.5
+  t: 1.6094379124341003
+  spacing_um: 0.5
+  max_ripup_iterations: 2
+  max_total_loss: 1.0
+  history_lambda: 0.02
+  history_increment: 1
+final:
+  bend_insertion: true
+  length_padding: true
+note: Source and target are swapped so plain A* routes from the BSG channel side without
+  extra steering heuristics. Endpoints are ordered right-to-left for input-order routing.

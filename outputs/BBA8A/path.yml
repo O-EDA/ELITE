@@ -1,0 +1,112 @@
+case: BBA8A
+pitch_um: 10.0
+waveguide_width_um: 0.5
+loss:
+  propagation_loss_per_um: 0.00015
+  crossing_loss: 0.52
+  min_bend_radius_um: 10.0
+  bend_loss_by_angle:
+    30: 0.01
+    45: 0.015
+    60: 0.02
+    90: 0.03
+bbox:
+- -2
+- 38
+- 0
+- 125
+target_length: 95
+matching_groups:
+- name: group1
+  endpoints:
+  - source:
+    - -2
+    - 40
+    target:
+    - 7
+    - 0
+    source_direction: 1
+    target_direction: 0
+  - source:
+    - -2
+    - 46
+    target:
+    - 15
+    - 0
+    source_direction: 1
+    target_direction: 0
+  - source:
+    - -2
+    - 52
+    target:
+    - 27
+    - 0
+    source_direction: 1
+    target_direction: 0
+  - source:
+    - -2
+    - 58
+    target:
+    - 35
+    - 0
+    source_direction: 1
+    target_direction: 0
+  - source:
+    - -2
+    - 82
+    target:
+    - 7
+    - 122
+    source_direction: 1
+    target_direction: 2
+  - source:
+    - -2
+    - 76
+    target:
+    - 15
+    - 122
+    source_direction: 1
+    target_direction: 2
+  - source:
+    - -2
+    - 70
+    target:
+    - 27
+    - 122
+    source_direction: 1
+    target_direction: 2
+  - source:
+    - -2
+    - 64
+    target:
+    - 35
+    - 122
+    source_direction: 1
+    target_direction: 2
+general_groups: []
+obstacles: []
+lut:
+  max_level: 10
+astar:
+  order_policy: hpwl_short_first
+  rudy_weight: 0.0
+detour:
+  area_slack_delta: 0.03
+  direction_priority: fixed_original
+  placement: nearest_endpoint
+general:
+  order_policy: input
+  diagonal: true
+  beta: 1.5
+  t: 1.6094379124341003
+  spacing_um: 0.5
+  max_ripup_iterations: 2
+  max_total_loss: 1.0
+  history_lambda: 0.02
+  history_increment: 1
+final:
+  bend_insertion: true
+  length_padding: true
+note: BBA8A patched-LUT ground-truth-shape case; rightmost top/bottom target pins
+  are moved left by 2 grids and source-side access is extended by 2 grids so every
+  final path measures 95 grids.

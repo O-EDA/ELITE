@@ -1,0 +1,14 @@
+{
+  "case": "BBA8B",
+  "max_loss": 0.699,
+  "total_loss": 5.592,
+  "max_bend_difference": 0,
+  "max_length_difference": 0,
+  "lut": {
+    "accepted": false,
+    "reason": "lut_does_not_strictly_reduce_raw_max_loss",
+    "detour_max_loss": 0.699,
+    "lut_raw_max_loss": 0.699,
+    "adopted_source": "detour"
+  }
+}

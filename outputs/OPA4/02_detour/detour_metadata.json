@@ -1,0 +1,2604 @@
+[
+  {
+    "group": "horizontal_pos_0",
+    "targets": [
+      23,
+      34,
+      27,
+      13
+    ],
+    "static_block_points_grid": 47,
+    "detour_metadata": {
+      "source": "side_region_contour_detour",
+      "side_region_engine": "ordered_side_region_loop",
+      "source_paths": [
+        [
+          [
+            1,
+            2
+          ],
+          [
+            14,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            8
+          ],
+          [
+            14,
+            8
+          ],
+          [
+            14,
+            13
+          ]
+        ],
+        [
+          [
+            1,
+            20
+          ],
+          [
+            14,
+            20
+          ]
+        ],
+        [
+          [
+            1,
+            26
+          ],
+          [
+            14,
+            26
+          ]
+        ]
+      ],
+      "residual_lengths_grid": [
+        11,
+        0,
+        7,
+        21
+      ],
+      "residual_lengths_source": "target_length_delta",
+      "target_total_length_grid": 34,
+      "expected_lengths_by_order": [
+        {
+          "order": 0,
+          "start": [
+            1,
+            2
+          ],
+          "end": [
+            14,
+            2
+          ],
+          "expected_explicit_length_grid": 23
+        },
+        {
+          "order": 1,
+          "start": [
+            1,
+            8
+          ],
+          "end": [
+            14,
+            13
+          ],
+          "expected_explicit_length_grid": 34
+        },
+        {
+          "order": 2,
+          "start": [
+            1,
+            20
+          ],
+          "end": [
+            14,
+            20
+          ],
+          "expected_explicit_length_grid": 27
+        },
+        {
+          "order": 3,
+          "start": [
+            1,
+            26
+          ],
+          "end": [
+            14,
+            26
+          ],
+          "expected_explicit_length_grid": 13
+        }
+      ],
+      "boundary_top_padding_grid": null,
+      "boundary_area_source": "auto_detour_region",
+      "routing_boundary_area_source": "global_auto_region_search_area",
+      "longest_boundary_schedule": {
+        "policy": "longest_path_must_be_outer_boundary_or_partition_region",
+        "orientation": "horizontal",
+        "ordered_path_count": 4,
+        "order_axis": "y",
+        "analyses": [
+          {
+            "source": "current_path_lengths",
+            "lengths_grid": [
+              13,
+              18,
+              13,
+              13
+            ],
+            "longest_indices": [
+              1
+            ],
+            "selected_longest_index": null,
+            "unique_longest_index": null,
+            "longest_is_outer_boundary": null,
+            "fixed_candidate_target_length_grid": null,
+            "fixed_candidate_current_length_grid": null,
+            "fixed_candidate_reaches_target": null,
+            "partition_required": false
+          },
+          {
+            "source": "expected_explicit_lengths",
+            "lengths_grid": [
+              23,
+              34,
+              27,
+              13
+            ],
+            "longest_indices": [
+              1
+            ],
+            "selected_longest_index": null,
+            "unique_longest_index": null,
+            "longest_is_outer_boundary": null,
+            "fixed_candidate_target_length_grid": null,
+            "fixed_candidate_current_length_grid": null,
+            "fixed_candidate_reaches_target": null,
+            "partition_required": false
+          }
+        ],
+        "partition_required": false,
+        "partition": null
+      },
+      "spiral_placement_policy": "legacy_longest",
+      "detour_direction_priority": "source_target_inner",
+      "detour_area_slack_check": {
+        "enabled": true,
+        "delta": 0.03,
+        "boundary_area": [
+          0,
+          15,
+          1,
+          27
+        ],
+        "area_model": "unused_grid_cells_in_detour_region",
+        "required_area_model": "sum(max(0, longest_length_grid - current_path_length_grid))",
+        "total_area_grid": 390,
+        "source_occupied_area_grid": 57,
+        "external_blocked_area_grid": 4,
+        "occupied_area_grid": 61,
+        "overlap_occupied_area_grid": 0,
+        "available_area_grid": 329,
+        "target_longest_length_grid": 34,
+        "current_lengths_grid": [
+          13,
+          18,
+          13,
+          13
+        ],
+        "required_area_grid": 79,
+        "required_area_per_net_grid": [
+          21,
+          16,
+          21,
+          21
+        ],
+        "required_area_with_slack_grid": 81.37,
+        "passes": true
+      },
+      "direct_detour_precheck": {
+        "status": "all_paths_direct_detour_feasible",
+        "policy": "commit direct detours only after every selected path passes and stays within max direct length gap",
+        "max_direct_gap_grid": 2,
+        "checks": [
+          {
+            "candidate_order": 3,
+            "active_side": "lower",
+            "spiral_direction": "up",
+            "route_length_grid": 13,
+            "target_length_grid": 34,
+            "expected_length_grid": 23,
+            "length_dt": 4,
+            "status": "direct_detour_feasible",
+            "after_length_grid": 23,
+            "target_gap_grid": 0,
+            "plan_boundary_area": [
+              -1,
+              26,
+              -1,
+              44
+            ],
+            "plan": {
+              "status": "selected",
+              "route_length": 23,
+              "requested_target_route_length_grid": 23,
+              "target_route_length_grid": 23,
+              "target_gap_grid": 0,
+              "iterations": 1,
+              "steps": [
+                {
+                  "status": "valid",
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 0,
+                  "point_start": [
+                    1,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 0,
+                  "target_arc_distance": 13,
+                  "nearest_endpoint_distance": 0,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "bend_count": 5,
+                  "before_length": 13,
+                  "after_length": 23,
+                  "target_route_length_grid": 23,
+                  "iteration": 0
+                }
+              ],
+              "attempts": [
+                {
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 0,
+                  "point_start": [
+                    1,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 0,
+                  "target_arc_distance": 13,
+                  "nearest_endpoint_distance": 0,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 5
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 1,
+                  "point_start": [
+                    2,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 1,
+                  "target_arc_distance": 12,
+                  "nearest_endpoint_distance": 1,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 2,
+                  "point_start": [
+                    3,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 2,
+                  "target_arc_distance": 11,
+                  "nearest_endpoint_distance": 2,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 3,
+                  "point_start": [
+                    4,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 3,
+                  "target_arc_distance": 10,
+                  "nearest_endpoint_distance": 3,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 4,
+                  "point_start": [
+                    5,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 4,
+                  "target_arc_distance": 9,
+                  "nearest_endpoint_distance": 4,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 5,
+                  "point_start": [
+                    6,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 5,
+                  "target_arc_distance": 8,
+                  "nearest_endpoint_distance": 5,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 6,
+                  "point_start": [
+                    7,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 6,
+                  "target_arc_distance": 7,
+                  "nearest_endpoint_distance": 6,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 7,
+                  "point_start": [
+                    8,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 7,
+                  "target_arc_distance": 6,
+                  "nearest_endpoint_distance": 6,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 8,
+                  "point_start": [
+                    9,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 8,
+                  "target_arc_distance": 5,
+                  "nearest_endpoint_distance": 5,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 9,
+                  "point_start": [
+                    10,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 9,
+                  "target_arc_distance": 4,
+                  "nearest_endpoint_distance": 4,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 10,
+                  "point_start": [
+                    11,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 10,
+                  "target_arc_distance": 3,
+                  "nearest_endpoint_distance": 3,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 11,
+                  "point_start": [
+                    12,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 11,
+                  "target_arc_distance": 2,
+                  "nearest_endpoint_distance": 2,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      2
+                    ],
+                    [
+                      14,
+                      2
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 12,
+                  "point_start": [
+                    13,
+                    2
+                  ],
+                  "length_dt": 5,
+                  "candidate_length": 23,
+                  "source_arc_distance": 12,
+                  "target_arc_distance": 1,
+                  "nearest_endpoint_distance": 1,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 5
+                }
+              ]
+            }
+          },
+          {
+            "candidate_order": 0,
+            "active_side": "upper",
+            "spiral_direction": "down",
+            "route_length_grid": 13,
+            "target_length_grid": 34,
+            "expected_length_grid": 13,
+            "length_dt": 0,
+            "status": "no_direct_detour_needed",
+            "after_length_grid": 13,
+            "target_gap_grid": 0
+          },
+          {
+            "candidate_order": 2,
+            "active_side": "lower",
+            "spiral_direction": "up",
+            "route_length_grid": 18,
+            "target_length_grid": 34,
+            "expected_length_grid": 34,
+            "length_dt": 8,
+            "status": "direct_detour_feasible",
+            "after_length_grid": 34,
+            "target_gap_grid": 0,
+            "plan_boundary_area": [
+              -1,
+              26,
+              -1,
+              44
+            ],
+            "plan": {
+              "status": "selected",
+              "route_length": 34,
+              "requested_target_route_length_grid": 34,
+              "target_route_length_grid": 34,
+              "target_gap_grid": 0,
+              "iterations": 1,
+              "steps": [
+                {
+                  "status": "valid",
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 0,
+                  "point_start": [
+                    1,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 34,
+                  "source_arc_distance": 0,
+                  "target_arc_distance": 18,
+                  "nearest_endpoint_distance": 0,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "bend_count": 6,
+                  "before_length": 18,
+                  "after_length": 34,
+                  "target_route_length_grid": 34,
+                  "iteration": 0
+                }
+              ],
+              "attempts": [
+                {
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 0,
+                  "point_start": [
+                    1,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 34,
+                  "source_arc_distance": 0,
+                  "target_arc_distance": 18,
+                  "nearest_endpoint_distance": 0,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 1,
+                  "point_start": [
+                    2,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 34,
+                  "source_arc_distance": 1,
+                  "target_arc_distance": 17,
+                  "nearest_endpoint_distance": 1,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 7
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 2,
+                  "point_start": [
+                    3,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 34,
+                  "source_arc_distance": 2,
+                  "target_arc_distance": 16,
+                  "nearest_endpoint_distance": 2,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 7
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 3,
+                  "point_start": [
+                    4,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 34,
+                  "source_arc_distance": 3,
+                  "target_arc_distance": 15,
+                  "nearest_endpoint_distance": 3,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 7
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 4,
+                  "point_start": [
+                    5,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 34,
+                  "source_arc_distance": 4,
+                  "target_arc_distance": 14,
+                  "nearest_endpoint_distance": 4,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 7
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 5,
+                  "point_start": [
+                    6,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 34,
+                  "source_arc_distance": 5,
+                  "target_arc_distance": 13,
+                  "nearest_endpoint_distance": 5,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 7
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 6,
+                  "point_start": [
+                    7,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 34,
+                  "source_arc_distance": 6,
+                  "target_arc_distance": 12,
+                  "nearest_endpoint_distance": 6,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "stepwise_self_point_block",
+                  "blocked_point": [
+                    14,
+                    9
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 7,
+                  "point_start": [
+                    8,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 34,
+                  "source_arc_distance": 7,
+                  "target_arc_distance": 11,
+                  "nearest_endpoint_distance": 7,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "stepwise_self_point_block",
+                  "blocked_point": [
+                    14,
+                    9
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 8,
+                  "point_start": [
+                    9,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 34,
+                  "source_arc_distance": 8,
+                  "target_arc_distance": 10,
+                  "nearest_endpoint_distance": 8,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "stepwise_self_point_block",
+                  "blocked_point": [
+                    14,
+                    9
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 9,
+                  "point_start": [
+                    10,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 34,
+                  "source_arc_distance": 9,
+                  "target_arc_distance": 9,
+                  "nearest_endpoint_distance": 9,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "stepwise_self_point_block",
+                  "blocked_point": [
+                    14,
+                    9
+                  ]
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 10,
+                  "point_start": [
+                    11,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 34,
+                  "source_arc_distance": 10,
+                  "target_arc_distance": 8,
+                  "nearest_endpoint_distance": 8,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "other_block"
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 11,
+                  "point_start": [
+                    12,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 34,
+                  "source_arc_distance": 11,
+                  "target_arc_distance": 7,
+                  "nearest_endpoint_distance": 7,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "other_block"
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      8
+                    ],
+                    [
+                      14,
+                      8
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "up",
+                  "direct": "up",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "up"
+                  ],
+                  "offset": 12,
+                  "point_start": [
+                    13,
+                    8
+                  ],
+                  "length_dt": 8,
+                  "candidate_length": 32,
+                  "source_arc_distance": 12,
+                  "target_arc_distance": 6,
+                  "nearest_endpoint_distance": 6,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "expected_length_mismatch",
+                  "expected_route_length_grid": 34
+                },
+                {
+                  "segment": [
+                    [
+                      14,
+                      8
+                    ],
+                    [
+                      14,
+                      13
+                    ]
+                  ],
+                  "orientation": "vertical",
+                  "required_orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "direct": "up",
+                  "status": "segment_orientation_mismatch",
+                  "segment_length": 5,
+                  "length_dt": 8,
+                  "direction_priority": "source_target_inner",
+                  "direction_tier": "primary"
+                }
+              ]
+            }
+          },
+          {
+            "candidate_order": 1,
+            "active_side": "upper",
+            "spiral_direction": "down",
+            "route_length_grid": 13,
+            "target_length_grid": 34,
+            "expected_length_grid": 27,
+            "length_dt": 6,
+            "status": "direct_detour_feasible",
+            "after_length_grid": 27,
+            "target_gap_grid": 0,
+            "plan_boundary_area": [
+              -1,
+              26,
+              -1,
+              44
+            ],
+            "plan": {
+              "status": "selected",
+              "route_length": 27,
+              "requested_target_route_length_grid": 27,
+              "target_route_length_grid": 27,
+              "target_gap_grid": 0,
+              "iterations": 1,
+              "steps": [
+                {
+                  "status": "valid",
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 0,
+                  "point_start": [
+                    1,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 0,
+                  "target_arc_distance": 13,
+                  "nearest_endpoint_distance": 0,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "bend_count": 5,
+                  "before_length": 13,
+                  "after_length": 27,
+                  "target_route_length_grid": 27,
+                  "iteration": 0
+                }
+              ],
+              "attempts": [
+                {
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 0,
+                  "point_start": [
+                    1,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 0,
+                  "target_arc_distance": 13,
+                  "nearest_endpoint_distance": 0,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 5
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 1,
+                  "point_start": [
+                    2,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 1,
+                  "target_arc_distance": 12,
+                  "nearest_endpoint_distance": 1,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 2,
+                  "point_start": [
+                    3,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 2,
+                  "target_arc_distance": 11,
+                  "nearest_endpoint_distance": 2,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 3,
+                  "point_start": [
+                    4,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 3,
+                  "target_arc_distance": 10,
+                  "nearest_endpoint_distance": 3,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 4,
+                  "point_start": [
+                    5,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 4,
+                  "target_arc_distance": 9,
+                  "nearest_endpoint_distance": 4,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 5,
+                  "point_start": [
+                    6,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 5,
+                  "target_arc_distance": 8,
+                  "nearest_endpoint_distance": 5,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 6,
+                  "point_start": [
+                    7,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 6,
+                  "target_arc_distance": 7,
+                  "nearest_endpoint_distance": 6,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 7,
+                  "point_start": [
+                    8,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 7,
+                  "target_arc_distance": 6,
+                  "nearest_endpoint_distance": 6,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 8,
+                  "point_start": [
+                    9,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 8,
+                  "target_arc_distance": 5,
+                  "nearest_endpoint_distance": 5,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 9,
+                  "point_start": [
+                    10,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 9,
+                  "target_arc_distance": 4,
+                  "nearest_endpoint_distance": 4,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 10,
+                  "point_start": [
+                    11,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 10,
+                  "target_arc_distance": 3,
+                  "nearest_endpoint_distance": 3,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "valid",
+                  "bend_count": 6
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 11,
+                  "point_start": [
+                    12,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 11,
+                  "target_arc_distance": 2,
+                  "nearest_endpoint_distance": 2,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "other_block"
+                },
+                {
+                  "segment": [
+                    [
+                      1,
+                      20
+                    ],
+                    [
+                      14,
+                      20
+                    ]
+                  ],
+                  "orientation": "horizontal",
+                  "endpoint_anchor": "source",
+                  "preferred_direct": "down",
+                  "direct": "down",
+                  "direction_priority": "source_target_inner",
+                  "direction_order": [
+                    "down"
+                  ],
+                  "offset": 12,
+                  "point_start": [
+                    13,
+                    20
+                  ],
+                  "length_dt": 7,
+                  "candidate_length": 27,
+                  "source_arc_distance": 12,
+                  "target_arc_distance": 1,
+                  "nearest_endpoint_distance": 1,
+                  "preferred_endpoint": null,
+                  "preferred_anchor": null,
+                  "placement_policy": "legacy_longest",
+                  "direction_tier": "primary",
+                  "status": "other_block"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "boundary_area": [
+        0,
+        15,
+        1,
+        27
+      ],
+      "routing_boundary_area": [
+        0,
+        25,
+        0,
+        43
+      ],
+      "hard_boundary_area": [
+        0,
+        25,
+        0,
+        43
+      ],
+      "external_obstacle_paths_grid": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            8
+          ]
+        ],
+        [
+          [
+            0,
+            20
+          ],
+          [
+            0,
+            20
+          ]
+        ],
+        [
+          [
+            0,
+            26
+          ],
+          [
+            0,
+            26
+          ]
+        ],
+        [
+          [
+            15,
+            2
+          ],
+          [
+            15,
+            2
+          ]
+        ],
+        [
+          [
+            15,
+            13
+          ],
+          [
+            15,
+            13
+          ]
+        ],
+        [
+          [
+            15,
+            20
+          ],
+          [
+            15,
+            20
+          ]
+        ],
+        [
+          [
+            15,
+            26
+          ],
+          [
+            15,
+            26
+          ]
+        ],
+        [
+          [
+            16,
+            2
+          ],
+          [
+            16,
+            2
+          ]
+        ],
+        [
+          [
+            16,
+            20
+          ],
+          [
+            16,
+            20
+          ]
+        ],
+        [
+          [
+            16,
+            26
+          ],
+          [
+            16,
+            26
+          ]
+        ],
+        [
+          [
+            17,
+            2
+          ],
+          [
+            17,
+            2
+          ]
+        ],
+        [
+          [
+            17,
+            20
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        [
+          [
+            17,
+            26
+          ],
+          [
+            17,
+            26
+          ]
+        ],
+        [
+          [
+            18,
+            2
+          ],
+          [
+            18,
+            2
+          ]
+        ],
+        [
+          [
+            18,
+            3
+          ],
+          [
+            18,
+            3
+          ]
+        ],
+        [
+          [
+            18,
+            4
+          ],
+          [
+            18,
+            4
+          ]
+        ],
+        [
+          [
+            18,
+            5
+          ],
+          [
+            18,
+            5
+          ]
+        ],
+        [
+          [
+            18,
+            6
+          ],
+          [
+            18,
+            6
+          ]
+        ],
+        [
+          [
+            18,
+            7
+          ],
+          [
+            18,
+            7
+          ]
+        ],
+        [
+          [
+            18,
+            8
+          ],
+          [
+            18,
+            8
+          ]
+        ],
+        [
+          [
+            18,
+            9
+          ],
+          [
+            18,
+            9
+          ]
+        ],
+        [
+          [
+            18,
+            17
+          ],
+          [
+            18,
+            17
+          ]
+        ],
+        [
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ]
+        ],
+        [
+          [
+            18,
+            19
+          ],
+          [
+            18,
+            19
+          ]
+        ],
+        [
+          [
+            18,
+            20
+          ],
+          [
+            18,
+            20
+          ]
+        ],
+        [
+          [
+            18,
+            26
+          ],
+          [
+            18,
+            26
+          ]
+        ],
+        [
+          [
+            19,
+            9
+          ],
+          [
+            19,
+            9
+          ]
+        ],
+        [
+          [
+            19,
+            17
+          ],
+          [
+            19,
+            17
+          ]
+        ],
+        [
+          [
+            19,
+            26
+          ],
+          [
+            19,
+            26
+          ]
+        ],
+        [
+          [
+            20,
+            26
+          ],
+          [
+            20,
+            26
+          ]
+        ],
+        [
+          [
+            21,
+            26
+          ],
+          [
+            21,
+            26
+          ]
+        ],
+        [
+          [
+            22,
+            13
+          ],
+          [
+            22,
+            13
+          ]
+        ],
+        [
+          [
+            22,
+            14
+          ],
+          [
+            22,
+            14
+          ]
+        ],
+        [
+          [
+            22,
+            15
+          ],
+          [
+            22,
+            15
+          ]
+        ],
+        [
+          [
+            22,
+            16
+          ],
+          [
+            22,
+            16
+          ]
+        ],
+        [
+          [
+            22,
+            17
+          ],
+          [
+            22,
+            17
+          ]
+        ],
+        [
+          [
+            22,
+            18
+          ],
+          [
+            22,
+            18
+          ]
+        ],
+        [
+          [
+            22,
+            19
+          ],
+          [
+            22,
+            19
+          ]
+        ],
+        [
+          [
+            22,
+            20
+          ],
+          [
+            22,
+            20
+          ]
+        ],
+        [
+          [
+            22,
+            21
+          ],
+          [
+            22,
+            21
+          ]
+        ],
+        [
+          [
+            22,
+            22
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        [
+          [
+            22,
+            23
+          ],
+          [
+            22,
+            23
+          ]
+        ],
+        [
+          [
+            22,
+            24
+          ],
+          [
+            22,
+            24
+          ]
+        ],
+        [
+          [
+            22,
+            25
+          ],
+          [
+            22,
+            25
+          ]
+        ],
+        [
+          [
+            22,
+            26
+          ],
+          [
+            22,
+            26
+          ]
+        ],
+        [
+          [
+            23,
+            13
+          ],
+          [
+            23,
+            13
+          ]
+        ]
+      ],
+      "external_obstacle_count": 47,
+      "target_length": 34,
+      "side_region_active_count": 4,
+      "target_lengths_by_order": [
+        {
+          "order": 0,
+          "start": [
+            1,
+            2
+          ],
+          "end": [
+            14,
+            2
+          ],
+          "target_length": 34
+        },
+        {
+          "order": 1,
+          "start": [
+            1,
+            8
+          ],
+          "end": [
+            14,
+            13
+          ],
+          "target_length": 34
+        },
+        {
+          "order": 2,
+          "start": [
+            1,
+            20
+          ],
+          "end": [
+            14,
+            20
+          ],
+          "target_length": 34
+        },
+        {
+          "order": 3,
+          "start": [
+            1,
+            26
+          ],
+          "end": [
+            14,
+            26
+          ],
+          "target_length": 34
+        }
+      ],
+      "auto_detour_region": {
+        "orientation": "horizontal",
+        "base_boundary_area": [
+          0,
+          15,
+          1,
+          27
+        ],
+        "source": "path_order_and_outermost_paths",
+        "selection_mode": "paper_area_direct_longest_edge",
+        "expansion_policy": "test_base_region_then_compute_minimum_longest_edge_extension_from_available_area",
+        "requested_search_boundary_area": [
+          0,
+          25,
+          0,
+          43
+        ],
+        "search_boundary_area": [
+          0,
+          25,
+          0,
+          43
+        ],
+        "search_boundary_area_adjusted_to_contain_base": false,
+        "allowed_extension_sides": [
+          "top",
+          "bottom"
+        ],
+        "base_area_slack_check": {
+          "enabled": true,
+          "delta": 0.03,
+          "boundary_area": [
+            0,
+            15,
+            1,
+            27
+          ],
+          "area_model": "unused_grid_cells_in_detour_region",
+          "required_area_model": "sum(max(0, longest_length_grid - current_path_length_grid))",
+          "total_area_grid": 390,
+          "source_occupied_area_grid": 57,
+          "external_blocked_area_grid": 4,
+          "occupied_area_grid": 61,
+          "overlap_occupied_area_grid": 0,
+          "available_area_grid": 329,
+          "target_longest_length_grid": 34,
+          "current_lengths_grid": [
+            13,
+            18,
+            13,
+            13
+          ],
+          "required_area_grid": 79,
+          "required_area_per_net_grid": [
+            21,
+            16,
+            21,
+            21
+          ],
+          "required_area_with_slack_grid": 81.37,
+          "passes": true
+        },
+        "extension_options": [
+          {
+            "extension_side": "top",
+            "extension_clearance_grid": 16,
+            "boundary_edge_length_grid": 15
+          },
+          {
+            "extension_side": "bottom",
+            "extension_clearance_grid": 1,
+            "boundary_edge_length_grid": 15
+          }
+        ],
+        "longest_boundary_schedule": {
+          "policy": "longest_path_must_be_outer_boundary_or_partition_region",
+          "orientation": "horizontal",
+          "ordered_path_count": 4,
+          "order_axis": "y",
+          "analyses": [
+            {
+              "source": "current_path_lengths",
+              "lengths_grid": [
+                13,
+                18,
+                13,
+                13
+              ],
+              "longest_indices": [
+                1
+              ],
+              "selected_longest_index": null,
+              "unique_longest_index": null,
+              "longest_is_outer_boundary": null,
+              "fixed_candidate_target_length_grid": null,
+              "fixed_candidate_current_length_grid": null,
+              "fixed_candidate_reaches_target": null,
+              "partition_required": false
+            },
+            {
+              "source": "expected_explicit_lengths",
+              "lengths_grid": [
+                23,
+                34,
+                27,
+                13
+              ],
+              "longest_indices": [
+                1
+              ],
+              "selected_longest_index": null,
+              "unique_longest_index": null,
+              "longest_is_outer_boundary": null,
+              "fixed_candidate_target_length_grid": null,
+              "fixed_candidate_current_length_grid": null,
+              "fixed_candidate_reaches_target": null,
+              "partition_required": false
+            }
+          ],
+          "partition_required": false,
+          "partition": null
+        },
+        "selected_boundary_area": [
+          0,
+          15,
+          1,
+          27
+        ],
+        "extension_side": "none",
+        "extension_grid": 0,
+        "validation": "closest_not_exceed_target",
+        "candidates": [
+          {
+            "extension_side": "none",
+            "extension_grid": 0,
+            "boundary_area": [
+              0,
+              15,
+              1,
+              27
+            ],
+            "boundary_edge_length_grid": null,
+            "candidate_policy": "base_detour_region_before_extension",
+            "area_slack_check": {
+              "enabled": true,
+              "delta": 0.03,
+              "boundary_area": [
+                0,
+                15,
+                1,
+                27
+              ],
+              "area_model": "unused_grid_cells_in_detour_region",
+              "required_area_model": "sum(max(0, longest_length_grid - current_path_length_grid))",
+              "total_area_grid": 390,
+              "source_occupied_area_grid": 57,
+              "external_blocked_area_grid": 4,
+              "occupied_area_grid": 61,
+              "overlap_occupied_area_grid": 0,
+              "available_area_grid": 329,
+              "target_longest_length_grid": 34,
+              "current_lengths_grid": [
+                13,
+                18,
+                13,
+                13
+              ],
+              "required_area_grid": 79,
+              "required_area_per_net_grid": [
+                21,
+                16,
+                21,
+                21
+              ],
+              "required_area_with_slack_grid": 81.37,
+              "passes": true
+            },
+            "lengths_grid": [
+              23,
+              34,
+              27,
+              13
+            ],
+            "gap_score": {
+              "total_over_target_grid": 0,
+              "total_under_target_grid": 0,
+              "max_under_target_grid": 0
+            },
+            "status": "selected_target"
+          }
+        ]
+      }
+    }
+  }
+]

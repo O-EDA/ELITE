@@ -1,0 +1,157 @@
+case: BBA14
+pitch_um: 10.0
+waveguide_width_um: 0.5
+loss:
+  propagation_loss_per_um: 0.00015
+  crossing_loss: 0.52
+  min_bend_radius_um: 10.0
+  bend_loss_by_angle:
+    30: 0.01
+    45: 0.015
+    60: 0.02
+    90: 0.03
+bbox:
+- 0
+- 70
+- 0
+- 160
+target_length: 143
+matching_groups:
+- name: group1
+  endpoints:
+  - source:
+    - 0
+    - 40
+    target:
+    - 7
+    - 0
+    source_direction: 1
+    target_direction: 0
+  - source:
+    - 0
+    - 46
+    target:
+    - 17
+    - 0
+    source_direction: 1
+    target_direction: 0
+  - source:
+    - 0
+    - 52
+    target:
+    - 27
+    - 0
+    source_direction: 1
+    target_direction: 0
+  - source:
+    - 0
+    - 58
+    target:
+    - 37
+    - 0
+    source_direction: 1
+    target_direction: 0
+  - source:
+    - 0
+    - 64
+    target:
+    - 47
+    - 0
+    source_direction: 1
+    target_direction: 0
+  - source:
+    - 0
+    - 70
+    target:
+    - 57
+    - 0
+    source_direction: 1
+    target_direction: 0
+  - source:
+    - 0
+    - 76
+    target:
+    - 67
+    - 0
+    source_direction: 1
+    target_direction: 0
+  - source:
+    - 0
+    - 118
+    target:
+    - 7
+    - 158
+    source_direction: 1
+    target_direction: 2
+  - source:
+    - 0
+    - 112
+    target:
+    - 17
+    - 158
+    source_direction: 1
+    target_direction: 2
+  - source:
+    - 0
+    - 106
+    target:
+    - 27
+    - 158
+    source_direction: 1
+    target_direction: 2
+  - source:
+    - 0
+    - 100
+    target:
+    - 37
+    - 158
+    source_direction: 1
+    target_direction: 2
+  - source:
+    - 0
+    - 94
+    target:
+    - 47
+    - 158
+    source_direction: 1
+    target_direction: 2
+  - source:
+    - 0
+    - 88
+    target:
+    - 57
+    - 158
+    source_direction: 1
+    target_direction: 2
+  - source:
+    - 0
+    - 82
+    target:
+    - 67
+    - 158
+    source_direction: 1
+    target_direction: 2
+general_groups: []
+obstacles: []
+lut:
+  max_level: 10
+astar:
+  order_policy: hpwl_short_first
+  rudy_weight: 0.0
+detour:
+  area_slack_delta: 0.03
+  direction_priority: fixed_original
+  placement: nearest_endpoint
+general:
+  order_policy: input
+  diagonal: true
+  beta: 1.5
+  t: 1.6094379124341003
+  spacing_um: 0.5
+  max_ripup_iterations: 2
+  max_total_loss: 1.0
+  history_lambda: 0.02
+  history_increment: 1
+final:
+  bend_insertion: true
+  length_padding: true

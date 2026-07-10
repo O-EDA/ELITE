@@ -1,0 +1,65 @@
+[
+  {
+    "case": "OPA4",
+    "max_loss": 0.1725,
+    "total_loss": 0.69,
+    "max_bend_difference": 0,
+    "max_length_difference": 0,
+    "lut_accepted": true,
+    "lut_reason": "lut_strictly_reduces_raw_max_loss"
+  },
+  {
+    "case": "OPA9",
+    "max_loss": 0.342,
+    "total_loss": 3.078,
+    "max_bend_difference": 0,
+    "max_length_difference": 0,
+    "lut_accepted": false,
+    "lut_reason": "lut_does_not_strictly_reduce_raw_max_loss"
+  },
+  {
+    "case": "OPA16",
+    "max_loss": 0.528,
+    "total_loss": 8.448,
+    "max_bend_difference": 0,
+    "max_length_difference": 0,
+    "lut_accepted": false,
+    "lut_reason": "lut_does_not_strictly_reduce_raw_max_loss"
+  },
+  {
+    "case": "ODL6",
+    "max_loss": 0.339,
+    "total_loss": 1.974,
+    "max_bend_difference": 2,
+    "max_length_difference": 0,
+    "lut_accepted": true,
+    "lut_reason": "lut_strictly_reduces_raw_max_loss"
+  },
+  {
+    "case": "BBA8A",
+    "max_loss": 0.2925,
+    "total_loss": 2.34,
+    "max_bend_difference": 0,
+    "max_length_difference": 0,
+    "lut_accepted": true,
+    "lut_reason": "lut_strictly_reduces_raw_max_loss"
+  },
+  {
+    "case": "BBA8B",
+    "max_loss": 0.699,
+    "total_loss": 5.592,
+    "max_bend_difference": 0,
+    "max_length_difference": 0,
+    "lut_accepted": false,
+    "lut_reason": "lut_does_not_strictly_reduce_raw_max_loss"
+  },
+  {
+    "case": "BBA14",
+    "max_loss": 0.5445,
+    "total_loss": 7.623,
+    "max_bend_difference": 0,
+    "max_length_difference": 0,
+    "lut_accepted": false,
+    "lut_reason": "lut_does_not_strictly_reduce_raw_max_loss"
+  }
+]

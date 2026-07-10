@@ -1,0 +1,18 @@
+{
+  "case": "toy_case",
+  "max_loss": 0.241,
+  "total_loss": 0.823,
+  "max_bend_difference": 0,
+  "max_length_difference": 0,
+  "lut": {
+    "accepted": false,
+    "reason": "lut_does_not_strictly_reduce_raw_max_loss",
+    "detour_max_loss": 0.225,
+    "lut_raw_max_loss": 0.225,
+    "adopted_source": "detour"
+  },
+  "general_nets": [
+    2,
+    3
+  ]
+}

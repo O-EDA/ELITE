@@ -1,0 +1,353 @@
+{
+  "bbox": [
+    0,
+    70,
+    0,
+    160
+  ],
+  "obstacle_rectangles": [],
+  "target_lengths": [
+    143,
+    143,
+    143,
+    143,
+    143,
+    143,
+    143,
+    143,
+    143,
+    143,
+    143,
+    143,
+    143,
+    143
+  ],
+  "region_selection_policy": "paper_scanline_common_cut_axis_order_preserved_no_crossing",
+  "region_engine": "legacy_contour_detour",
+  "direction_priority": "fixed_original",
+  "placement": "nearest_endpoint",
+  "segment_entries": [
+    {
+      "net": 0,
+      "group": "vertical_neg_0",
+      "segment": [
+        [
+          7,
+          39
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        7,
+        1
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 8,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 9,
+      "target_region_length": 134
+    },
+    {
+      "net": 1,
+      "group": "vertical_neg_0",
+      "segment": [
+        [
+          17,
+          39
+        ],
+        [
+          17,
+          1
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        17,
+        1
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 24,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 25,
+      "target_region_length": 118
+    },
+    {
+      "net": 2,
+      "group": "vertical_neg_0",
+      "segment": [
+        [
+          27,
+          39
+        ],
+        [
+          27,
+          1
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        27,
+        1
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 40,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 41,
+      "target_region_length": 102
+    },
+    {
+      "net": 3,
+      "group": "vertical_neg_0",
+      "segment": [
+        [
+          37,
+          39
+        ],
+        [
+          37,
+          1
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        37,
+        1
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 56,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 57,
+      "target_region_length": 86
+    },
+    {
+      "net": 4,
+      "group": "vertical_neg_0",
+      "segment": [
+        [
+          47,
+          39
+        ],
+        [
+          47,
+          1
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        47,
+        1
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 72,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 73,
+      "target_region_length": 70
+    },
+    {
+      "net": 5,
+      "group": "vertical_neg_0",
+      "segment": [
+        [
+          57,
+          39
+        ],
+        [
+          57,
+          1
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        57,
+        1
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 88,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 89,
+      "target_region_length": 54
+    },
+    {
+      "net": 6,
+      "group": "vertical_neg_0",
+      "segment": [
+        [
+          67,
+          39
+        ],
+        [
+          67,
+          1
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        67,
+        1
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 104,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 105,
+      "target_region_length": 38
+    },
+    {
+      "net": 7,
+      "group": "vertical_pos_1",
+      "segment": [
+        [
+          67,
+          119
+        ],
+        [
+          67,
+          157
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        67,
+        157
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 104,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 105,
+      "target_region_length": 38
+    },
+    {
+      "net": 8,
+      "group": "vertical_pos_1",
+      "segment": [
+        [
+          57,
+          119
+        ],
+        [
+          57,
+          157
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        57,
+        157
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 88,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 89,
+      "target_region_length": 54
+    },
+    {
+      "net": 9,
+      "group": "vertical_pos_1",
+      "segment": [
+        [
+          47,
+          119
+        ],
+        [
+          47,
+          157
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        47,
+        157
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 72,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 73,
+      "target_region_length": 70
+    },
+    {
+      "net": 10,
+      "group": "vertical_pos_1",
+      "segment": [
+        [
+          37,
+          119
+        ],
+        [
+          37,
+          157
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        37,
+        157
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 56,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 57,
+      "target_region_length": 86
+    },
+    {
+      "net": 11,
+      "group": "vertical_pos_1",
+      "segment": [
+        [
+          27,
+          119
+        ],
+        [
+          27,
+          157
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        27,
+        157
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 40,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 41,
+      "target_region_length": 102
+    },
+    {
+      "net": 12,
+      "group": "vertical_pos_1",
+      "segment": [
+        [
+          17,
+          119
+        ],
+        [
+          17,
+          157
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        17,
+        157
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 24,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 25,
+      "target_region_length": 118
+    },
+    {
+      "net": 13,
+      "group": "vertical_pos_1",
+      "segment": [
+        [
+          7,
+          119
+        ],
+        [
+          7,
+          157
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        7,
+        157
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 8,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 9,
+      "target_region_length": 134
+    }
+  ]
+}

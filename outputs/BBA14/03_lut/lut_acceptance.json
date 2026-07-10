@@ -1,0 +1,7 @@
+{
+  "accepted": false,
+  "reason": "lut_does_not_strictly_reduce_raw_max_loss",
+  "detour_max_loss": 0.5445,
+  "lut_raw_max_loss": 0.5445,
+  "adopted_source": "detour"
+}

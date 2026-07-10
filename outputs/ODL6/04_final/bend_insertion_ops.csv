@@ -1,0 +1,7 @@
+net,base_length_grid,base_metric_length_grid,base_bends,base_metric_bends,target_metric_bends,target_full_bends,final_length_grid,final_metric_length_grid,final_bends,final_metric_bends,status,operators
+0,22,22,10,10,10,10,22,22,10,10,ok,
+1,22,22,10,10,10,10,22,22,10,10,ok,
+2,18,18,10,10,10,10,18,18,10,10,ok,
+3,18,18,10,10,10,10,18,18,10,10,ok,
+4,26,26,10,10,10,10,26,26,10,10,ok,
+5,16,16,6,6,10,10,16,16,8,8,partial,"monotonic_staircase_insert+2@(0, 2)"

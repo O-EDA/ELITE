@@ -1,0 +1,5 @@
+net,base_length_grid,base_metric_length_grid,base_bends,base_metric_bends,target_metric_bends,target_full_bends,final_length_grid,final_metric_length_grid,final_bends,final_metric_bends,status,operators
+0,36,35,4,4,4,4,36,35,4,4,ok,
+1,36,35,4,4,4,4,36,35,4,4,ok,
+2,36,35,4,4,4,4,36,35,4,4,ok,
+3,36,35,2,2,4,4,36,35,4,4,ok,"monotonic_staircase_insert+2@(0, 2)"

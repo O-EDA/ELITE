@@ -1,0 +1,35 @@
+[
+  {
+    "iteration": 0,
+    "active_nets": [
+      2,
+      3
+    ],
+    "fixed_matching_nets": [
+      0,
+      1
+    ],
+    "fixed_seed_count": 2,
+    "ripup_scope": [
+      2,
+      3
+    ],
+    "losses": {
+      "2": 0.132,
+      "3": 0.241
+    },
+    "total_loss": 0.373,
+    "worst_net": 3,
+    "max_net_violation": false,
+    "total_violation": false,
+    "violation": false,
+    "hotspot": [
+      22,
+      6
+    ],
+    "hotspot_loss": 0.0315,
+    "hotspot_nets": [],
+    "history_grid_count": 0,
+    "history_penalty": 0.0
+  }
+]

@@ -1,0 +1,209 @@
+{
+  "bbox": [
+    -2,
+    38,
+    0,
+    125
+  ],
+  "obstacle_rectangles": [],
+  "target_lengths": [
+    95,
+    95,
+    95,
+    95,
+    95,
+    95,
+    95,
+    95
+  ],
+  "region_selection_policy": "paper_scanline_common_cut_axis_order_preserved_no_crossing",
+  "region_engine": "legacy_contour_detour",
+  "direction_priority": "fixed_original",
+  "placement": "nearest_endpoint",
+  "segment_entries": [
+    {
+      "net": 0,
+      "group": "vertical_neg_0",
+      "segment": [
+        [
+          7,
+          39
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        7,
+        1
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 10,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 11,
+      "target_region_length": 84
+    },
+    {
+      "net": 1,
+      "group": "vertical_neg_0",
+      "segment": [
+        [
+          15,
+          39
+        ],
+        [
+          15,
+          1
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        15,
+        1
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 24,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 25,
+      "target_region_length": 70
+    },
+    {
+      "net": 2,
+      "group": "vertical_neg_0",
+      "segment": [
+        [
+          27,
+          39
+        ],
+        [
+          27,
+          1
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        27,
+        1
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 42,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 43,
+      "target_region_length": 52
+    },
+    {
+      "net": 3,
+      "group": "vertical_neg_0",
+      "segment": [
+        [
+          35,
+          39
+        ],
+        [
+          35,
+          1
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        35,
+        1
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 56,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 57,
+      "target_region_length": 38
+    },
+    {
+      "net": 4,
+      "group": "vertical_pos_1",
+      "segment": [
+        [
+          35,
+          83
+        ],
+        [
+          35,
+          121
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        35,
+        121
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 56,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 57,
+      "target_region_length": 38
+    },
+    {
+      "net": 5,
+      "group": "vertical_pos_1",
+      "segment": [
+        [
+          27,
+          83
+        ],
+        [
+          27,
+          121
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        27,
+        121
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 42,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 43,
+      "target_region_length": 52
+    },
+    {
+      "net": 6,
+      "group": "vertical_pos_1",
+      "segment": [
+        [
+          15,
+          83
+        ],
+        [
+          15,
+          121
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        15,
+        121
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 24,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 25,
+      "target_region_length": 70
+    },
+    {
+      "net": 7,
+      "group": "vertical_pos_1",
+      "segment": [
+        [
+          7,
+          83
+        ],
+        [
+          7,
+          121
+        ]
+      ],
+      "preferred_spiral_endpoint": [
+        7,
+        121
+      ],
+      "preferred_spiral_endpoint_side": "route_end_side",
+      "prefix_length_to_segment_start": 10,
+      "suffix_length_from_segment_end": 1,
+      "outside_length": 11,
+      "target_region_length": 84
+    }
+  ]
+}

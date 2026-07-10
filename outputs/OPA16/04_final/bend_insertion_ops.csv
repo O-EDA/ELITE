@@ -1,0 +1,17 @@
+net,base_length_grid,base_metric_length_grid,base_bends,base_metric_bends,target_metric_bends,target_full_bends,final_length_grid,final_metric_length_grid,final_bends,final_metric_bends,status,operators
+0,152,152,8,8,10,10,152,152,10,10,ok,"monotonic_staircase_insert+2@(6, 8)"
+1,152,152,10,10,10,10,152,152,10,10,ok,
+2,152,152,8,8,10,10,152,152,10,10,ok,"monotonic_staircase_insert+2@(6, 8)"
+3,152,152,10,10,10,10,152,152,10,10,ok,
+4,152,152,8,8,10,10,152,152,10,10,ok,"monotonic_staircase_insert+2@(6, 8)"
+5,152,152,10,10,10,10,152,152,10,10,ok,
+6,152,152,8,8,10,10,152,152,10,10,ok,"monotonic_staircase_insert+2@(6, 8)"
+7,152,152,8,8,10,10,152,152,10,10,ok,"monotonic_staircase_insert+2@(6, 8)"
+8,152,152,10,10,10,10,152,152,10,10,ok,
+9,152,152,8,8,10,10,152,152,10,10,ok,"monotonic_staircase_insert+2@(6, 8)"
+10,152,152,10,10,10,10,152,152,10,10,ok,
+11,152,152,8,8,10,10,152,152,10,10,ok,"monotonic_staircase_insert+2@(6, 8)"
+12,152,152,10,10,10,10,152,152,10,10,ok,
+13,152,152,10,10,10,10,152,152,10,10,ok,
+14,152,152,10,10,10,10,152,152,10,10,ok,
+15,152,152,4,4,10,10,152,152,10,10,ok,"monotonic_staircase_insert+6@(0, 2)"

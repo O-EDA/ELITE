@@ -1,0 +1,5 @@
+net,base_length_grid,base_metric_length_grid,target_length_grid,requested_delta_grid,final_length_grid,final_metric_length_grid,status,u_bend_start_idx
+0,36,35,36,0.5,36,35,rejected_would_worsen_length_difference,0
+1,36,35,36,0.5,36,35,rejected_would_worsen_length_difference,0
+2,36,35,36,0.5,36,35,rejected_would_worsen_length_difference,0
+3,36,35,36,0.5,36,35,no_feasible_u_bend,

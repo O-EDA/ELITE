@@ -1,0 +1,9 @@
+net,base_length_grid,base_metric_length_grid,target_length_grid,requested_delta_grid,final_length_grid,final_metric_length_grid,status,u_bend_start_idx
+0,95,95,95,0,95,95,already_at_or_above_target,
+1,95,95,95,0,95,95,already_at_or_above_target,
+2,95,95,95,0,95,95,already_at_or_above_target,
+3,95,95,95,0,95,95,already_at_or_above_target,
+4,95,95,95,0,95,95,already_at_or_above_target,
+5,95,95,95,0,95,95,already_at_or_above_target,
+6,95,95,95,0,95,95,already_at_or_above_target,
+7,95,95,95,0,95,95,already_at_or_above_target,

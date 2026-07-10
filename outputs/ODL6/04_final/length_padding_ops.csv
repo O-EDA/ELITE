@@ -1,0 +1,7 @@
+net,base_length_grid,base_metric_length_grid,target_length_grid,requested_delta_grid,final_length_grid,final_metric_length_grid,status,u_bend_start_idx
+0,22,22,26,2,22,22,no_feasible_u_bend,
+1,22,22,26,2,22,22,no_feasible_u_bend,
+2,18,18,26,4,18,18,no_feasible_u_bend,
+3,18,18,26,4,18,18,no_feasible_u_bend,
+4,26,26,26,0,26,26,already_at_or_above_target,
+5,16,16,26,5,16,16,no_feasible_u_bend,

@@ -1,0 +1,8 @@
+case,max_loss,total_loss,max_bend_difference,max_length_difference,lut_accepted,lut_reason
+OPA4,0.1725,0.69,0,0,True,lut_strictly_reduces_raw_max_loss
+OPA9,0.342,3.078,0,0,False,lut_does_not_strictly_reduce_raw_max_loss
+OPA16,0.528,8.448,0,0,False,lut_does_not_strictly_reduce_raw_max_loss
+ODL6,0.339,1.974,2,0,True,lut_strictly_reduces_raw_max_loss
+BBA8A,0.2925,2.34,0,0,True,lut_strictly_reduces_raw_max_loss
+BBA8B,0.699,5.592,0,0,False,lut_does_not_strictly_reduce_raw_max_loss
+BBA14,0.5445,7.623,0,0,False,lut_does_not_strictly_reduce_raw_max_loss
